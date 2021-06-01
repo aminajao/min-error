@@ -1,13 +1,87 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  font-family: 'Poppins', sans-serif;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.hero-container {
+  background-color: #6F972D;
+}
+button.search {
+  background: #F79033;
+}
+button.subscribe {
+  background: #F79033;
+  min-width: max-content;
+}
+button.sell__btn {
+  color: #6F972D;
+  min-width: max-content;
+  border: 1px solid #6F972D;
+}
+@media (max-width: 768px) {
+  button.sell__btn{
+    margin-right: 0px !important;
+    margin-bottom: 8px;
+  }
+  input.form-control {
+    padding: 20px;
+    margin-bottom: 3px;
+  }
+}
+input.form-control {
+  border: 1px solid #6F972D;
+}
+button.sell__btn:hover {
+  color: #6F972D;
+}
+button.report {
+  background-color: #6F972D;
+  width: 450px;
+}
+@media (max-width: 768px) {
+  .report {
+    width: max-content !important;
+  }
+}
+div.card__container {
+  position: relative;
+  min-height: 400px;
+  width: 280px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media (max-width: 400px){
+    width: 100% !important;
+  }
+}
+.img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.4;
+  border-radius: 5px;
+}
+.card__row--container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul>li {
+  border: 0px !important;
+  padding: 0px !important;
+  color: #252B1D;
+  padding-bottom: 25px !important;
+}
+.footer__container {
+  margin-top: 150px !important;
+}
+@media (max-width: 768px) {
+    .flex-col {
+      flex-direction: column;
+    }
+}
+@media (max-width: 768px) {
+    #center {
+      justify-content:center !important;
+    }
 }
